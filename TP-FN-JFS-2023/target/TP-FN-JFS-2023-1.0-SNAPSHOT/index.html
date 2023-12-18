@@ -1,0 +1,415 @@
+<!doctype html>
+<!--<html lang="en">-->
+  <html lang="en" data-bs-theme=""></html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trabajo práctico integrador</title>
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> 
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+  <body>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+-->
+<!--
+    <nav class="navbar navbar-expand-lg ">-->
+      <nav class="navbar fixed-top bg-body-tertiary navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+     <!--    <a class="navbar-brand" href="#">Bootstrap</a>-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cards">Nutrición para corredores</a>
+            </li>
+       <!--      <li class="nav-item">
+              <a class="nav-link" href="#carrousel">Carrousel</a>
+            </li>-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Planes de entrenamiento
+              </a>
+              <ul  class="dropdown-menu">
+                <li><a id="menuu" class="dropdown-item" href="#plan5k" >Plan 5 km</a></li>
+                <li><a id="menuu" class="dropdown-item" href="#plan10k">Plan 10 km</a></li>
+                <li><a id="menuu" class="dropdown-item" href="#plan21k">Plan medio maratón</a></li>
+                <li><a id="menuu" class="dropdown-item" href="#plan42k">Plan maratón</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html" target="_blank">Predecir ritmos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#form">Contacto</a>
+            </li>
+          </ul>
+       <!--   <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>-->
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="place" class="container-fluid px-0">
+      <div class="card bg-dark text-white">
+        <img src="./assets/img/principal.jpg" class="card-img h-50" alt="">
+        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-end">
+          <h3 id="texto" class="card-title  ">Corredores de La Sierra</h3>
+          <p id="texto" class="card-text ">¡Bienvenidos a Corredores de La Sierra!  El mejor sitio para corredores.<br>  Como correr no es solo correr acá encontraras todo lo necesario para que<br> te vuelvas  un mejor corredor<br> 
+            Encontraras información sobre nutrición, pruebas de material y <br> recomendaciones de ejercicios para trabajar todas esas articulaciones y grupos <br> musculares que necesitas tener a punto para evitar lesiones y dar tu mejor <br> rendimiento en carrera.
+          </p>
+        
+        </div>
+      </div>
+    </div>
+    <br>
+
+ <!-- 
+    <div class="container text-center">
+      <h2 id="columnas" class="text-center">Columnas</h2>
+      <div class="row align-items-start">
+        <div class="col border border-primary">
+          <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consectetur, at exercitationem omnis aliquid iure. Reprehenderit sint, cumque ipsum aspernatur, veritatis debitis rem ex qui, culpa eius facilis at dolores?</p>
+        </div>
+        <div class="col border border-secondary">
+          <p class="p-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore harum nemo cumque ratione consectetur inventore adipisci mollitia, ex qui eum optio facere temporibus perspiciatis exercitationem nulla suscipit laudantium eveniet animi.
+          </p>
+        </div>
+        <div class="col border border-danger">
+          <p class="p-3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque commodi sequi unde ea sint veritatis necessitatibus molestias consequuntur ducimus, sit, beatae minima voluptatem ipsa illum culpa amet quaerat dignissimos rem!
+          </p>
+        </div>
+        <div class="col border border-danger">
+          <p class="p-3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque commodi sequi unde ea sint veritatis necessitatibus molestias consequuntur ducimus, sit, beatae minima voluptatem ipsa illum culpa amet quaerat dignissimos rem!
+          </p>
+        </div>
+        <div class="col border border-danger">
+          <p class="p-3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque commodi sequi unde ea sint veritatis necessitatibus molestias consequuntur ducimus, sit, beatae minima voluptatem ipsa illum culpa amet quaerat dignissimos rem!
+          </p>
+        </div>
+      </div>
+    </div>
+-->
+    <!-- Inicio Carrousel -->
+<!--
+    <h2 id="carrousel" class="text-center">Carrousel</h2>
+    <div id="carouselExampleIndicators" class="carousel slide mx-auto col-6"   data-ride="carousel" data-interval="500">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner  ">
+        <div class="carousel-item active text-center">
+          <img src="assets/img/main2.jpg"   class="rounded d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/mo2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/mo4.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>-->
+
+
+
+
+
+
+
+
+    <!-- inicio Cards Group -->
+
+
+
+
+<br id="cards">
+ <br>
+ <br>
+ <br>
+ 
+
+
+
+    <h2  class="text-center">Qué Alimentos son Más Saludables para los Corredores</h2>
+    <div>
+    <p class="text-center col-8 mx-auto">   
+    Si quieres ver tus progresos y obtener los mejores resultados en cuanto a rendimiento, resistencia y recuperación de tu cuerpo, tienes que prestar especial atención a lo que comes, y no me refiero sólo a qué comer sino también a cuándo.
+    Una vez que empiezas a correr, necesitas ser consciente que tu cuerpo va a necesitar un poco de combustible extra para alcanzar diariamente esos kilómetros que quieres hacer.
+    No puedes llevar la misma alimentación de siempre, puesto que has añadido el ejercicio a tu día a día y vas a quemar alrededor de 100 calorías extra por cada kilómetro que recorras. Además, tus músculos también van a necesitar proteína extra para funcionar y rendir correctamente.
+     ¡Así que toma nota de los grupos de alimentos que vas a necesitar a partir de ahora!
+    </p>
+  </div>
+  <br>
+  <br>
+
+
+
+    <div class="card-group">
+      <div class="card">
+        <img src="assets/img/carbohidratos.jpg"  class="rounded-4" class="card-img-top" alt="...">
+        <div class="card-body" >
+          <span class="badge text-bg-warning">Macronutriente</span>
+          <h5 class="card-title">Carbohidratos</h5>
+          <p class="card-text">
+            El grupo de los carbohidratos son la principal fuente de energía y un nutriente esencial para tu organismo. Sin embargo, si acabas de empezar probablemente no necesites un gran aporte de hidratos de carbono al principio.
+            Cuando ya seas un corredor más avanzado y vayas a correr muchos kilómetros seguidos o estés preparando una carrera y el desgaste sea mayor, será cuando los carbohidratos deban predominar más en tu dieta. Por lo que desecha la idea de consumirlos en cantidad antes de los entrenamientos, a no ser que vayas a correr más de 90 minutos.
+            Los hidratos de carbono pueden ser simples o complejos. Los hidratos simples son aquellos que causan desequilibrios en los niveles de glucosa y al no poder ser absorbidos se acumulan en forma de grasa (refrescos o zumos azucarados, bollería industrial, dulces o galletas).
+            Mientras que, los hidratos de carbono complejos (cereales integrales, arroz o pasta integral, patatas, frutos rojos o legumbres como los garbanzos), al ser hidratos de absorción lenta crean un efecto saciante y suelen ser ricos en otros nutrientes esenciales como fibra, vitaminas y minerales.  Como runner, te interesa mucho más comer los hidratos de carbono complejos antes que los simples.
+          </p>
+          </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/proteinas.jpg" class="rounded-4" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="badge text-bg-warning">Macronutriente</span>
+          <h5 class="card-title">Proteínas</h5>
+          <p class="card-text">
+            Deberías tomar al día entre 1,3 y 1,5 gramos de proteína por cada kilo de peso corporal. Por ejemplo, si pesas 64 kilos deberás comer una proporción de unos 96 gramos de proteína. Aunque parezca poca cantidad, si lo combinas con un consumo correcto de carbohidratos estarás optimizando el uso de los aminoácidos que te proporcionan las proteínas.
+            Debes saber también que la proteína es esencial para la reparación de tendones y músculos y para la regulación de las hormonas. Cuanto más a menudo entrenes y más distancia recorras cada vez, más trabajo de recuperación tendrán tus músculos.
+            ¿Dónde las puedes encontrar? Pues tanto en los alimentos de origen animal como vegetal: carnes, pescados, huevos, lácteos, frutos secos y legumbres.
+            Cuanto mayor sea la calidad de la proteína que consumas mejor, sobre todo si tus entrenamientos también están enfocados a la pérdida de peso. En estos casos es recomendable el consumo de alimentos como la carne magra, el tofu, las nueces o el pescado. Sin embargo, para los corredores que no tienen ningún problema con el peso, la proteína baja en grasa no será una preocupación.
+          </p>
+            </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/grasas.jpg" class="rounded-4" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="badge text-bg-warning">Macronutriente</span>
+          <h5 class="card-title">Grasas</h5>
+          <p class="card-text">Las grasas son fundamentales para tu alimentación ya que son necesarias para la formación de muchos tejidos de tu organismo y para la absorción de vitaminas liposolubles como las Vitaminas A, D, E y K.
+            Son el macronutriente que te va a aportar más calorías por cada gramo (9 kcal/gr), el doble de calorías que te aportan los carbohidratos y las proteínas. No todas las grasas son malas, las hay saludables y es recomendable incluirlas en nuestra dieta.  De hecho, casi un 30% de nuestra dieta debe provenir de grasas saludables, como las grasas monoinsaturadas que nos aportan alimentos como el aceite de oliva, el aguacate o las nueces.
+            Las grasas saturadas, por su parte, deben constituir un máximo de un 7% de las calorías provenientes de las grasas de la dieta. ¿Dónde las puedes encontrar? Mayormente en alimentos de origen animal como la leche y sus derivados o las carnes grasas.
+            Otro tipo de grasas saludables necesarias en la dieta de un runner son los ácidos grasos poliinsaturados como el omega 3 y 6.  Los encontrarás en alimentos como el pescado azul, el marisco o los aceites vegetales.  Eso sí, debes evitar ingerir demasiados alimentos con grasas trans como las que puedes encontrar en la mantequilla, los fritos o los postres.</p>
+          </div>
+      </div>
+    </div>
+
+
+    <br id="plan5k">
+    <br>
+    <!-- inicio card Horizontal -->
+    <h2 class="text-center">Planes de entrenamiento</h2>
+    <div  class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="assets/img/5k.jpg"  class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <span class="badge text-bg-warning">Plan 5 km</span>
+            <h5 class="card-title">PLAN DE ENTRENAMIENTO PARA CORRER 5K EN MENOS DE 20 MINUTOS</h5>
+            <p class="card-text">
+              Correr en menos de 20 minutos una carrera de 5k requiere entrenar bien y planificarse con tiempo con un buen plan de entrenamiento.
+              Es correr bajo los 4:00min/km lo que requiere un entrenamiento muy específico para hacerlo.
+              Aquí te dejamos un plan de 6 semanas para lograr bajar los 20 minutos si estas en muy buena forma física previa, y tienes por los menos un tiempo de 25 minutos en una carrera anterior de 5k.</p>
+              <a href="assets/downloads/Sub-20-en-5-kilometros.pdf" target="_blank" class="btn btn-success">Descargar plan</a>
+              <p class="card-text"><small class="text-body-secondary">descargado 4256 veces</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br id="plan10k">
+    <br>
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="assets/img/10k.jpg"  class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <span class="badge text-bg-warning">Plan 10 km</span>
+            <h5 class="card-title">PLAN DE ENTRENAMIENTO PARA CORRER 10K EN MENOS DE 40 MINUTOS</h5>
+            <p class="card-text">
+             Correr una carrera de 10k en menos de 40 minutos requiere mucha disciplina de entrenamiento. No es una prueba matadora como 21k o maratón, pero si lo suficientemente larga para medir tu velocidad y para los que están partiendo medirse como están físicamente.
+              Poder partir entrenando pensando en bajar la barrera de los 40 minutos es necesario de partida que vengas con un muy buen nivel de condición física y con registros de por lo menos 45 minutos o menos en 10k, si cumples esta norma, aquí te damos un buen apoyo con un plan de entrenamiento de 8 semanas:</p>
+              <a href="assets/downloads/Sub-40-en-10-kilometros.pdf" target="_blank" class="btn btn-success">Descargar plan</a>
+              <p class="card-text"><small class="text-body-secondary">descargado 3589 veces</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br id="plan21k">
+    <br>
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="assets/img/21k.jpg"  class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <span class="badge text-bg-warning">Plan 21 km</span>
+            <h5 class="card-title">PLAN DE ENTRENAMIENTO PARA BAJAR LAS 1:25 EN 21K</h5>
+            <p class="card-text">
+              Si ya lograste bajar las 1:30 en 21k, y eres una persona disciplina, esforzada, y con buenas aptitudes para correr,  te planteamos un desafío mayor, intentar bajar las 1:25 en 21k.
+              Técnicamente debes lograr correr a 4:02min/km que es una velocidad ya muy difícil de alcanzar sin un muy buen plan de entrenamiento, y por lo menos dos años o más de historial de entrenamiento, aunque si reúnes condiciones muy particulares este logro puede alcanzarlo en menor tiempo.
+              El porcentaje de corredores que lo logra esta marca se encuentra entre el 0,8%-1,5% en carreras de 21k bien medidas y con condiciones aptas para hacer un buen tiempo.
+               Aquí te damos un plan con 5 a 6 días de entrenamiento semanales, con una planificación de 8 semanas intensivas, pero con la necesidad que vengas con un buen volumen de entrenamiento base de por lo menos 50km semanales las últimas 4 semanas, y “cero” molestias musculares por la exigencia del plan.</p>
+              <a  href="assets/downloads/Sub-1-25-en-medio-maraton.jpg" target="_blank" class="btn btn-success">Descargar plan</a>
+              <p class="card-text"><small class="text-body-secondary">descargado 2569 veces</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br id="plan42k">
+    <br>
+    <div  class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="assets/img/42k.jpg"  class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <span class="badge text-bg-warning">Plan 42 km</span>
+            <h5 class="card-title">PLAN DE ENTRENAMIENTO PARA BAJAR LAS 3:00 HORAS EN MARATON</h5>
+            <p class="card-text">
+             Correr una maratón bajo 3:00 requiere que seas un corredor muy disciplinado y con ideal por lo menos unos 2 años entrenando duro, debes tener como requerimiento un tiempo cercano a 1:25 en media maratón como requisito indispensable.
+             Si cumples estos requisitos o crees que igual eres capaz de hacerlo, te proporcionamos un plan de 16 semanas ideal para lograrlo por su metodología ya probada:</p>
+              <a href="assets/downloads/Sub-3-en-maraton.jpg" target="_blank" class="btn btn-success">Descargar plan</a>
+              <p class="card-text"><small class="text-body-secondary">descargado 1953 veces</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="col-6 border border-primary mx-auto my-5 py-3 rounded">
+      <h2 id="form" class="text-center py-5" > Formulario      </h2>
+      <form>
+        <div class="mb-3 px-5">
+          <label for="exampleInputEmail1" class="form-label">Correo electónico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie.</div>
+        </div>
+        <div class="mb-3 px-5">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check px-5">
+          <input type="checkbox" class="form-check-input mx-1" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Guardar credenciales</label>
+        </div>
+        <div class=" text-center ">
+        <button type="submit" class="btn btn-primary px-5">Enviar</button>
+        <button type="reset" class="btn btn-outline-success px-5">Limpiar</button>
+      </div>
+      </form>
+
+    </section>
+
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="terminosycondiciones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="terminosycondicionesLabel"> Estos términos y condiciones describen las reglas y regulaciones para el uso del sitio web Corredores de la Sierra.
+              Al acceder a este sitio web asumimos que acepta estos términos y condiciones. No continúe usando sitio web Corredores de la Sierra si no acepta todos los términos y condiciones establecidos en esta página.
+              La siguiente terminología se aplica a estos Términos y condiciones, Declaración de privacidad y Aviso de exención de responsabilidad y a todos los Acuerdos: "Cliente", "Usted" y "Su" se refieren a usted, la persona que inicia sesión en este sitio web y cumple con los términos y condiciones de la Compañía. “La Compañía”, “Nosotros”, “Nosotros”, “Nuestro” y “Nos”, se refiere a nuestra Compañía. “Parte”, “Partes” o “Nosotros” se refieren tanto al Cliente como a nosotros mismos. Todos los términos se refieren a la oferta, aceptación y consideración del pago necesario para llevar a cabo el proceso de nuestra asistencia al Cliente de la manera más adecuada con el propósito expreso de satisfacer las necesidades del Cliente con respecto a la prestación de los servicios indicados por la Compañía, de acuerdo con y sujeto a la legislación vigente en la República Socialista de Argentina. Cualquier uso de la terminología anterior u otras palabras en singular, plural, mayúsculas y/o él/ella o ellos, se consideran intercambiables y por lo tanto se refieren a las mismas.
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="politicadeprivacidad" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="politicadeprivacidadlabel">
+              ¡Bienvenido a Corredores de la Sierra!
+              En Corredores de la Sierra,  una de nuestras principales prioridades es la privacidad de nuestros visitantes. Este documento de Política de privacidad contiene tipos de información que Corredores de la Sierra recopila y registra y cómo la usamos.
+              Si tiene preguntas adicionales o requiere más información sobre nuestra Política de Privacidad, no dude en contactarnos.
+             </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+           <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="descargoderesponsabilidad" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="descargoderesponsabilidad">
+              ¡Bienvenido a Corredores de La Sierra!
+              Toda la información contenida en este sitio web, se publica de buena fe y únicamente con fines de información general. Corredores de La Sierra no ofrece ninguna garantía sobre la integridad, confiabilidad y exactitud de esta información. Cualquier acción que realice sobre la información que encuentre en este sitio web (Corredores de La Sierra) es estrictamente bajo su propio riesgo. Corredores de La Sierra no será responsable de ninguna pérdida y/o daño relacionado con el uso de nuestro sitio web.
+              Desde nuestro sitio web, puede visitar otros sitios web siguiendo hipervínculos a dichos sitios externos. Si bien nos esforzamos por proporcionar únicamente enlaces de calidad a sitios web útiles y éticos, no tenemos control sobre el contenido ni la naturaleza de estos sitios. Estos enlaces a otros sitios web no implican una recomendación para todo el contenido que se encuentra en dichos sitios. Los propietarios y el contenido del sitio pueden cambiar sin previo aviso y pueden ocurrir antes de que tengamos la oportunidad de eliminar un enlace que pueda haber salido "malo".
+              Tenga en cuenta también que cuando abandona nuestro sitio web, otros sitios pueden tener políticas y términos de privacidad diferentes que están fuera de nuestro control. Asegúrese de consultar las Políticas de privacidad de estos sitios, así como sus “Términos de servicio” antes de realizar cualquier negocio o cargar cualquier información.
+              </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+           <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <footer id="buttonfooter" class="border  border-danger my-1 mx-auto">
+      <div  class="row mx-auto col-8"  >
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#terminosycondiciones">
+            Términos y condiciones
+           </button>
+        </div>
+        <div class="col">
+           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#politicadeprivacidad">
+            Política de privacidad
+           </button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#descargoderesponsabilidad">
+            Descargo de responsabilidad
+           </button>
+         </div>
+        
+      </div>
+
+
+
+
+    </footer>
+
+  </body>
+</html>
