@@ -29,17 +29,17 @@ public class ListadoController extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		//crear la instancia de ProductoDAO
+		//crear la instancia de SocioDAO
 		SocioDAO dao = new SocioDAO();
 		
-		//invocar al metodo listarProductos()
+		//invocar al metodo listarSocios()
 		List<Socio> listado = dao.listarSocios();
 		
 		//grabar el listado en el request para que lo vea la siguiente pagina
 		req.setAttribute("listado", listado);
 		
 		//ir a la siguiente pagina
-		getServletContext().getRequestDispatcher("/socios.jsp").forward(req, resp);
+		getServletContext().getRequestDispatcher("/listado.jsp").forward(req, resp);
 	}
 }
 

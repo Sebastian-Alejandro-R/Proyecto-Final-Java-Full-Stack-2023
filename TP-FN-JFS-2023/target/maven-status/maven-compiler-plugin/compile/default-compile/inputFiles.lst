@@ -1,4 +1,8 @@
-G:\Mi unidad\Java Full Stack\TP final\TP-FN-JFS-2023\src\main\java\com\mycompany\controllers\ListadoController.java
-G:\Mi unidad\Java Full Stack\TP final\TP-FN-JFS-2023\src\main\java\com\mycompany\conexion\AdministradorDeConexiones.java
-G:\Mi unidad\Java Full Stack\TP final\TP-FN-JFS-2023\src\main\java\com\mycompany\socio\Socio.java
-G:\Mi unidad\Java Full Stack\TP final\TP-FN-JFS-2023\src\main\java\com\mycompany\dao\SocioDAO.java
+I:\Mi unidad\Java Full Stack\TP final\TP-FN-JFS-2023\src\main\java\com\mycompany\socio\Socio.java
+I:\Mi unidad\Java Full Stack\TP final\TP-FN-JFS-2023\src\main\java\com\mycompany\conexion\AdministradorDeConexiones.java
+I:\Mi unidad\Java Full Stack\TP final\TP-FN-JFS-2023\src\main\java\com\mycompany\dao\SocioDAO.java
+I:\Mi unidad\Java Full Stack\TP final\TP-FN-JFS-2023\src\main\java\com\mycompany\controllers\CreateController.java
+I:\Mi unidad\Java Full Stack\TP final\TP-FN-JFS-2023\src\main\java\com\mycompany\controllers\EditarController.java
+I:\Mi unidad\Java Full Stack\TP final\TP-FN-JFS-2023\src\main\java\com\mycompany\controllers\ListadoController.java
+I:\Mi unidad\Java Full Stack\TP final\TP-FN-JFS-2023\src\main\java\com\mycompany\controllers\BuscarController.java
+I:\Mi unidad\Java Full Stack\TP final\TP-FN-JFS-2023\src\main\java\com\mycompany\controllers\EliminarController.java

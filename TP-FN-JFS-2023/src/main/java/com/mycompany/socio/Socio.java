@@ -4,6 +4,12 @@
  */
 package com.mycompany.socio;
 
+/**
+ *
+ * @author srandazzo
+ */
+
+
 import java.util.Date;
 
 
