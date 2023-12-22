@@ -6,8 +6,9 @@ package com.mycompany.controllers;
 
 /**
  *
- * @author Gatienzo
+ * @author srandazzo
  */
+
 
 import java.io.IOException;
 import java.sql.Connection;
